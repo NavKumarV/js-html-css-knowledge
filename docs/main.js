@@ -294,7 +294,7 @@ class CategoryDetailsComponent {
             if (data && data.type) {
                 this.categoryDetails = this.categoryList.find(cat => data.type === cat.type);
                 if (this.categoryDetails) {
-                    this.httpClient.get(`assets/mocks/${this.categoryDetails.type}.json`).toPromise().then((res) => {
+                    this.httpClient.get(`./assets/mocks/${this.categoryDetails.type}.json`).toPromise().then((res) => {
                         this.questions = res;
                     }).catch(e => {
                         console.log(e);

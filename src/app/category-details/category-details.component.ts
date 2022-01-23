@@ -20,7 +20,7 @@ export class CategoryDetailsComponent implements OnInit {
       if(data && data.type){
         this.categoryDetails = this.categoryList.find(cat=> data.type === cat.type)
         if(this.categoryDetails){
-          this.httpClient.get(`assets/mocks/${this.categoryDetails.type}.json`).toPromise().then((res: any[])=>{
+          this.httpClient.get(`./assets/mocks/${this.categoryDetails.type}.json`).toPromise().then((res: any[])=>{
             this.questions = res;
           }).catch(e=>{
             console.log(e);
