@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="text-center py-5">{{categoryDetails.name}} - Knowledge</h1>
+
+    <ng-container *ngIf="questions && questions.length">
+        <div *ngFor="let data of questions; let i = index; let even=even;" class="mb-5" [ngClass]="{'bg-light-gray':even}">
+            <h5>{{i+1}} - {{data.question}}</h5>
+            <ng-container *ngIf="data && data.links">
+                <div *ngFor="let link of data.links">
+                    <a href="{{link}}" target="_blank">{{link}}</a>
+                </div>
+            </ng-container>
+        </div>
+    </ng-container>
+</div>

@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="container">
+    <h1 class="text-center py-5">JS, HTML, CSS - Knowledge</h1>
+
+    <section>
+        <div class="row">
+            <div *ngFor="let category of categoryList" class="col-sm-12 col-md-6 col-lg-4">
+                <div class="text-center rounded-circle border border-warning mx-auto category-item" (click)="openCategory(category.type)" [ngClass]="category.colorClass">
+                    {{category.name}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

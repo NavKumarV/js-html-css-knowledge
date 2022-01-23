@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "question": "Where to add <script> tag in HTML code => <Head> or <Body> (Best Aproach)",
+        "links" : [
+            "https://levelup.gitconnected.com/all-about-script-87fea475b976"
+        ]
+    },
+    {
+        "id": "2",
+        "question": "In <script> tag what is the difference between 'async' and 'defer' ",
+        "links" : [
+            "https://www.digitalocean.com/community/tutorials/html-defer-async#:~:text=%3E-,Async%20vs%20Defer,order%20as%20they%20are%20called."
+        ]
+    }
+]

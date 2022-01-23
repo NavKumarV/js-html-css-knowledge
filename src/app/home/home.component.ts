@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CategoryList } from 'src/assets/data/category-data';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  categoryList = CategoryList;
+
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
+  }
+
+  openCategory(type){
+    this.router.navigate(['category-details',type]);
   }
 
 }
