@@ -12,5 +12,12 @@
         "links" : [
             "https://www.digitalocean.com/community/tutorials/html-defer-async#:~:text=%3E-,Async%20vs%20Defer,order%20as%20they%20are%20called."
         ]
+    },
+    {
+        "id": "3",
+        "question": "Difference between Pure functions and Impure functions",
+        "links" : [
+            "https://dev.to/sanspanic/pure-vs-impure-functions-50aj#:~:text=A%20pure%20function%20must%20both%20be%20predictable%20and%20without%20side%2Deffects.&text=An%20impure%20function%20is%20kind,and%20may%20cause%20side%2Deffects."
+        ]
     }
 ]
